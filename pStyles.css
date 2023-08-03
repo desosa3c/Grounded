@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aliceblue;  
+    scroll-behavior: smooth;  
+}
+
+h1 {
+    font-weight: 50px;
+    font-size: 200px;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 30px;
+    font-size: 50px;
+    color: #ffbb00;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: white;
+}
+
+#seccion-2 h1 {
+    font-size: 100px;
+    letter-spacing: 8px;
+}
+
+.review {
+    color: aliceblue;
+}
+
+.zonas {
+    font-weight: 30px;
+    font-size: 50px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+
+.logo {
+    width: 150px;
+}
+
+.banner {
+    background-color: rgb(48, 99, 39);
+    position:fixed;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.banner header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.banner ul {
+    display: flex;
+    list-style: none;
+    font-size: 15px 20px;
+}
+
+.banner header nav a{
+    text-align: none;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.banner header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+#seccion-0 {
+    background-size:cover;
+    background-image: url("./img/welcome-to-the-backyard.jpg");
+    background-position: center center;
+    position: relative;
+}
+
+#seccion-1 {
+    background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.548)), url("./img/Grounded-screenshot-outdoor-patio-Rash.png");
+    background-size: cover;
+}
+
+#seccion-2 {
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.795)), url("./img/Grounded-screenshot-lilypad-02.png");
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#seccion-2 h2 {
+    margin: 50px 0 ;
+}
+#seccion-3 {
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.795)), url("./img/Grounded-screenshot-lilypad-02.png");
+    background-size: cover;
+}
+
+#seccion-3 img {
+    width: 900px;
+    filter: blur(7px);
+}
+
+#seccion-4 {
+   
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.795)), url("./img/Grounded-screenshot-lilypad-02.png");
+    background-size: cover;
+    
+}
+
+#seccion-4 img {
+    width: 900px;
+    filter: blur(7px);
+}
+
+#seccion-1 video {
+    height: 320px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+}
+
+.inicio {
+    display: flex;
+    padding: 15px;
+}
+
+.inicio h2, .inicio p{
+    padding-left: 20px;
+}
+
+.inicio p {
+    padding-top: 50px;
+}
+
+#nav button {
+    height: 40px;
+    border: none;
+    font-size: 100%;
+    color: white;
+    background-color: rgb(48, 99, 39);
+    cursor: pointer;
+}
+
+.btnExplorar {
+    width: 150px;
+    height: 40px;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: large;
+    cursor: pointer;
+    position: absolute;
+    bottom: 60px;
+    transition: all ease .5s;
+    text-transform: uppercase;
+}
+
+.btnExplorar:hover {
+    background-color: rgb(48, 99, 39);
+    color: white;
+}
+
+.btnExplorar a {
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all ease 0.5s ;
+}
+
+.btnExplorar:hover a {
+    
+    color: white;
+}
+
+#patios {
+    gap: 50px;
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#patioInferior {
+    background: url("./img/patioInferior05.png");
+    min-height: 50vh;
+    width: 80%;
+    
+    position: relative;
+}
+
+#patioInferior button {
+    width: 100%;
+    height: 75px;
+    border: none;
+    border: 3px solid rgba(0, 0, 0, 0) ;
+    background-color: rgba(0, 0, 0, 0.712) ;
+    font-size: 200%;
+    
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+#patioInferior button:hover{
+    background-color: rgba(0, 0, 0, 0.712) ;
+    border: 3px solid rgb(255, 255, 255) ;
+}
+
+#patioInferior button a {
+    color: #ffbb00;
+    text-decoration: none;
+}
+
+#patioSuperior {
+    background: url("./img/patioSuperior03.png");
+    min-height: 50vh;
+    min-width: 80%;
+    
+    position: relative;
+}
+
+#patioSuperior button {
+    width: 100%;
+    height: 75px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.712) ;
+    font-size: 200%;
+
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+
+}
+
+#patioSuperior button:hover{
+    background-color: rgba(0, 0, 0, 0.712) ;
+    border: 3px solid rgb(255, 255, 255) ;
+}
+
+#patioSuperior button a {
+    color: #ffbb00;
+    text-decoration: none;
+}
+
+.problemasTecnicos {
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.795)), url("./img/tvSimp.webp");
+    background-size: cover;
+
+    justify-content: center;
+    display: flex;
+    
+}
